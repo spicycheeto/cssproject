@@ -3,32 +3,133 @@
 <!DOCTYPE html>
         <html>
         <head>
-        ​ <link rel="stylesheet" type"text/css" href="LandingPage.css">
+        ​ <link rel="stylesheet" type"text/css" href="ShopDisplay.css">
+	 <link rel="stylesheet" type"text/css" href="fontawesome-all.min.css">
+	 <link rel="stylesheet" type"text/css" href="main.css">
          <link rel="stylesheet" type="text/css" href="w3.css">
+	 <link rel="stylesheet" type="text/css" href="header.css">
 
-            
+
         </head>
 
         <body>
-             	
-		
-		
 
 
-			
-		<div class="landingColumn1" >
-			
 
-			<div class="tempHeader">
-				<h2>Fake Header (don't edit)</h2>
-			<div>
+    <div class="headerNav" >
 
-			<div class="landingRouteRow">
-				<img class="splash" src="splash.jpg" />
-			<div>
-		
-		</div>
-		
+      <div class="headerFlexBox">
+
+      <div class="socialMediaBox">
+          <img class="socialMediaImage" src="./content/facebook_icon_small.png" />
+          <img class="socialMediaImage" src="./content/instagram_icon_small.png" />
+
+      </div>
+      <div class="shoppingCartImage">
+
+
+          <img  class="shoppingCart"  src="./content/shopping_cart-24px.svg" />
+          <span id="cartItemAmount">0</span>
+
+
+      </div>
+    </div>
+
+
+
+
+
+    </div>
+	<div class="shopDisplayPageContainer" >
+
+
+		<div class="categoriesPageColumn">
+
+   		 <div class="categoriesPageRow" id="searchRow"  >
+
+
+		      <div class="categoriesDiv" id="categories">
+
+		         <div class="categoriesItem clickable" title={categoryString} onClick={this.handleCategoryClick}>
+			  <h4 title="All">All</h4>
+		  	 </div>
+
+			 <div class="categoriesItem clickable" title={categoryString} onClick={this.handleCategoryClick}>
+			  <h4 title={categoryString}>Category 1</h4>
+			  </div>
+
+	 		  <div class="categoriesItem clickable" title={categoryString} onClick={this.handleCategoryClick}>
+			  <h4 title={categoryString}>Category 2</h4>
+			  </div>
+
+			  <div class="categoriesItem clickable" title={categoryString} onClick={this.handleCategoryClick}>
+			  <h4 title={categoryString}>Category 3</h4>
+
+			  </div>
+		      </div>
+
+				  
+
+   	       	</div>
+
+		 <div class="categoriesPageRow" id="searchRow"  >
+
+				<div class="productCard clickable">
+				  
+				  <div class="productName">Temple Tours</div>
+				  <img  class="productCardImage" src="./content/temple1.png" />
+
+				  <div  class="priceInnerDiv" dataClicks={e.dataClicks} >
+
+
+				  <div class="productDescription">
+
+				    <p>Take a one day tour in the city with local guide that knows all the best spots!</p>
+				    <h3>$200 / 2 persons </h3>
+				  </div>
+
+
+				    <div class="viewDeals" id={index} onClick={this.props.handleCardThumbClick}>
+				      View Deals >>
+				    </div>
+
+				  </div>
+				  </Link>
+
+				</div>
+
+
+
+				<div class="productCard clickable">
+				  
+				  <div class="productName">Bike Tours</div>
+				  <img  class="productCardImage" src="./content/temple1.png" />
+
+				  <div  class="priceInnerDiv" dataClicks={e.dataClicks} >
+
+
+				  <div class="productDescription">
+
+				    <p>Take a one day tour in the city with local guide that knows all the best spots!</p>
+				    <h3>$200 / 2 persons </h3>
+				  </div>
+
+
+				    <div class="viewDeals" id={index} onClick={this.props.handleCardThumbClick}>
+				      View Deals >>
+				    </div>
+
+				  </div>
+				  </Link>
+
+				</div>
+
+			</div>
+	      </div>
+
+	</div>
+
+
 
 
         </body>
